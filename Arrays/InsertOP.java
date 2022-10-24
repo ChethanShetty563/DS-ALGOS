@@ -1,3 +1,4 @@
+class Insert {
 	public static int insert(int arr[], int n,int x,int cap, int pos) {
 		
 		
@@ -12,3 +13,4 @@
 		arr[idx] = x;
 		return n+1;
 	}
+}
