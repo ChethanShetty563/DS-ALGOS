@@ -50,8 +50,9 @@ class Solution
             return;
         }
         
+	     System.out.print(N + " ");
         printNos(N-1);
-        System.out.print(N + " ");
+     
     }
 }
 
