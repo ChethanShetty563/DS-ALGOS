@@ -52,10 +52,10 @@ class Solution {
             
         }
         
-        if(xcount ==0 && ycount == 0) {
-            return x;
+        if(xcount == ycount) {
+            return x > y ? y : x;
         }
         
-        return xcount > ycount ? xcount : ycount;
+        return xcount > ycount ? x : y;
     }
 }
