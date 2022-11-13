@@ -13,3 +13,11 @@ boolean isPow2(int n) {
   }
   return true;
 }
+
+// Efficient Solution
+boolean isPow2(int n) {
+  if(n == 0) {
+    return false;
+  }
+  return ((n&(n-1) == 0);
+          }
