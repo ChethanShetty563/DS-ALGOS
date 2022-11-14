@@ -24,6 +24,18 @@ class CheckBit
             return false;
         }
     }
+	
+	
+	 static boolean checkKthBit(int n, int k)
+    {
+        // Your code here
+        int x = 1;
+        while(k>0) {
+            x = x << 1;
+            k--;
+        }
+        return (x&n) != 0;
+    }
     
 }
 
