@@ -34,3 +34,19 @@ void moveZeros(int arr[], int n) {
         }
     }
 
+// Efficient Solution
+// Time complexity is O(n) and Space is O(1)
+
+void moveZeros(int arr[], int n) {
+  int count = 0;
+  for(int i=0;i<n;i++) {
+    if(arr[i] != 0) {
+      int temp = arr[count];
+      arr[count] = arr[i];
+      arr[i] = arr[count];
+      count++;
+    }
+  }
+}
+  
+
