@@ -13,6 +13,9 @@ public static int countOnes(int arr[], int N){
         return count;
     }
 
+
+// The below 2 solution takes O(LogN) time
+
 public static int countOnes(int arr[], int N){
         
     int low = 0;
