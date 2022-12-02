@@ -1,4 +1,4 @@
-// The time complexity is O(n)
+// The time complexity is O(n^2)
 
 void leaders(int arr[], int n) {
   for(int i=0;i<n;i++) {
