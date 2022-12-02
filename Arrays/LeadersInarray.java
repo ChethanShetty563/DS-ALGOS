@@ -14,4 +14,20 @@ void leaders(int arr[], int n) {
            }
          }
          
+// The time complexity is O(n) and space is O(1)         
+         
+ void leaders(int arr[], int n) {
+   
+   int curr_ldr = arr[n-1];
+   System.out.println(curr_ldr);
+   
+   for(int i = n -2;i>=0;i--) {
+     if(curr_ldr < arr[i]) {
+       curr_ldr = arr[i];
+        System.out.println(curr_ldr);
+     }
+   }
+ }
+       
+         
       
