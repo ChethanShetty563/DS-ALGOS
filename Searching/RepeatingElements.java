@@ -11,3 +11,35 @@ int getRepeatingElement(int arr[], int n) {
 }
 return -1;
 }
+
+// NAive Approach
+// Time Complxity is O(nlogn) and space complexity O(1)
+
+int getRepeatingElement(int arr[], int n) {
+  Arrays.sort(arr);
+  for(in i=0;i<n-1;i++){
+    if(arr[i] == arr[i+1]) {
+      return arr[i];
+    }
+  }
+  return -1;
+}
+
+// Efficient Approach
+// Time Complexity O(n) and O(n)
+
+int getRepeatingElements(int arr[], int n) {
+  boolean temp[] = new boolean[n];
+  
+  for(int i=0;i<n;i++) {
+    temp[i] = false;
+  }
+  
+  for(int i=0;i<n;i++) {
+    if(temp[arr[i]]) {
+      return arr[i];
+    }
+    temp[arr[i]] = true;
+  }
+}
+  
